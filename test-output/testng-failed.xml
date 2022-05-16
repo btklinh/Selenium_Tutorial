@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+  </listeners>
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.bankguru.user.Level_14_Assert_Verify">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="TC_02_Login_To_System"/>
+        </methods>
+      </class> <!-- com.bankguru.user.Level_14_Assert_Verify -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="JQuery DataTable" parallel="false">
+
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name ="url" value = "https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/"/> 
+		<classes>
+			<class name="com.jquery.datatable.Level_12_Handle_Datatable" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
