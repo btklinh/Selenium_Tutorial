@@ -38,9 +38,9 @@ public class Level_14_Assert_Verify extends AbstractTest {
 		state = "Hanoi";
 		pin = "100231";
 		phone = "0999127882";
-		//email = "lynn" + randomNumber() + "@gmail.com";
+		// email = "lynn" + randomNumber() + "@gmail.com";
 		userID = "mngr399874";
-				password= "uteguga";
+		password = "uteguga";
 
 	}
 
@@ -51,10 +51,10 @@ public class Level_14_Assert_Verify extends AbstractTest {
 	@Test
 	public void TC_02_Login_To_System() {
 		System.out.println("Login- Step 01: Open Login page");
-		//loginPage = registerPage.openLoginPage(loginPageUrl);
-		
+		// loginPage = registerPage.openLoginPage(loginPageUrl);
+
 		// First false
-		System.out.println("Login- Step 02: Check login form displayed");		
+		System.out.println("Login- Step 02: Check login form displayed");
 		verifyTrue(loginPage.isLoginFormDisplay());
 
 		System.out.println("Login- Step 03: Input to userID/password textbox");
@@ -67,14 +67,11 @@ public class Level_14_Assert_Verify extends AbstractTest {
 		// Second false
 		System.out.println("Login - Step 05: Navigate to Homepage");
 		verifyEquals(mainPage.getWelcomeMessage(), "Welcome To Manager's Page of. ");
-		
-		
+
 		// Third false
 		System.out.println("Login- Step 06: Check login form undisplayed");
 		verifyFalse(mainPage.isLoginFormUndisplayed());
 	}
-	
-
 
 	@AfterClass
 	public void afterClass() {

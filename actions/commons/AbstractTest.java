@@ -3,6 +3,8 @@ package commons;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,17 +12,26 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
+//import org.apache.commons.
 import org.testng.Assert;
 import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AbstractTest {
+public abstract class AbstractTest {
 	protected enum Browser {
 		CHROME, FIREFOX, IE, CHROMEHEADLESS, FIREFOXHEADLESS, EDGE;
 	}
 
 	private static ThreadLocal<WebDriver> tDriver = new ThreadLocal<WebDriver>();
+	
+	//khai bao
+	protected final Log log;
+	
+	//khoi tao
+	protected AbstractTest() {
+		log = LogFactory.getLog(getClass());
+	}
 
 	private String projectPath = System.getProperty("user.dir");
 
@@ -143,8 +154,7 @@ public class AbstractTest {
 
 	private boolean checkFailed(boolean condition) {
 		boolean pass = true;
-		try {
-			
+		try {			
 			Assert.assertFalse(condition);
 		} catch (Throwable e) {
 			pass = false;
@@ -164,8 +174,7 @@ public class AbstractTest {
 			Assert.assertEquals(actual, expected);
 			
 		} catch (Throwable e) {
-			pass = false;
-			
+			pass = false;			
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}

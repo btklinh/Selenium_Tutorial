@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Suite" parallel="false">
+<suite name="Bank Guru" parallel="false">
 
 	<listeners>
 		<listener class-name="commons.MethodListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="reportConfig.ExtentReportListenerV2" />
 	</listeners>
 
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.bankguru.user.Level_14_Assert_Verify" />
+			<class name="com.bankguru.user.Level_15_Log_Report_HTML" />
+		</classes>
+	</test>
+
+	<test name="Run on Firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.bankguru.user.Level_15_Log_Report_HTML" />
 		</classes>
 	</test>
 

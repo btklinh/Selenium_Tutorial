@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -24,7 +26,14 @@ import pageObjects.bankGuru.LoginPageObject;
 import pageObjects.bankGuru.NewCustomerPageObject;
 import pageUI.bankGuru.AbstractPageUI;
 
-public class AbstractPage {
+public abstract class AbstractPage {
+
+	// apply log trong Abstract page
+	protected final Log log;
+
+	protected AbstractPage() {
+		log = LogFactory.getLog(getClass());
+	}
 
 	public void openUrl(WebDriver driver, String url) {
 //		this.driver = driver;
@@ -226,6 +235,7 @@ public class AbstractPage {
 		try {
 			return find(driver, locator).isDisplayed();
 		} catch (Exception e) {
+			log.info("Element is not displayed with message: " + e.getMessage());
 			return false;
 		}
 	}
@@ -235,15 +245,16 @@ public class AbstractPage {
 		elements = finds(driver, locator);
 		overrideGlobalTimeout(driver, GlobalConstants.LONG_TIMEOUT);
 		if (elements.size() == 0) {
-
-			System.out.println("Element not in DOM");
+			// System.out.println("Element not in DOM");
+			log.info("Element not in DOM");
 			return true;
 		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
-			System.out.println("Element in DOM but not visible / displayed");
+			// System.out.println("Element in DOM but not visible / displayed");
+			log.info("Element in DOM but not visible / displayed");
 			return true;
 		} else {
-
-			System.out.println("Element in DOM and visible");
+			// System.out.println("Element in DOM and visible");
+			log.info("Element in DOM and visible");
 			return false;
 		}
 
@@ -390,42 +401,64 @@ public class AbstractPage {
 	}
 
 	public void waitToElementPresence(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
-		explicitWait.until(ExpectedConditions.presenceOfElementLocated(byXpath(locator)));
+		try {
+			explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+			explicitWait.until(ExpectedConditions.presenceOfElementLocated(byXpath(locator)));
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
 	}
 
 	public void waitToElementVisible(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
-		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(locator)));
+		try {
+			explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+			explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(locator)));
+		} catch (Exception e) {
+			log.info("Waiting for element visible with message: " + e.getMessage());
+		}
 	}
 
 	public void waitToElementVisible(WebDriver driver, String locator, String... values) {
-		explicitWait = new WebDriverWait(driver, GlobalConstants.SHORT_TIMEOUT);
-		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(castToRestParameter(locator, values))));
+		try {
+			explicitWait = new WebDriverWait(driver, GlobalConstants.SHORT_TIMEOUT);
+			explicitWait.until(ExpectedConditions.visibilityOfElementLocated(byXpath(castToRestParameter(locator, values))));
+		} catch (Exception e) {
+			log.info("Waiting for element visible with message: " + e.getMessage());
+		}
 	}
 
 	public void waitToElementInvisible(WebDriver driver, String locator) {
 		try {
 			// co gia tri khi co trong dom
 			explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
-			
+
 			overrideGlobalTimeout(driver, GlobalConstants.SHORT_TIMEOUT);
 			explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(byXpath(locator)));
 			overrideGlobalTimeout(driver, GlobalConstants.LONG_TIMEOUT);
 		} catch (Exception e) {
-			e.printStackTrace();
+			log.info("Waiting for element invisible with message: " + e.getMessage());
 		}
 
 	}
 
 	public void waitToElementClickable(WebDriver driver, String locator) {
-		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
-		explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(locator)));
+		try {
+			explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+			explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(locator)));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			log.info("Waiting for element clickable with message: " + e.getMessage());
+		}
 	}
 
 	public void waitToElementClickable(WebDriver driver, String locator, String... values) {
-		explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
-		explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(castToRestParameter(locator, values))));
+		try {
+			explicitWait = new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT);
+			explicitWait.until(ExpectedConditions.elementToBeClickable(byXpath(castToRestParameter(locator, values))));
+		} catch (Exception e) {
+			log.info("Waiting for element clickable with message: "+e.getMessage());
+		}
 	}
 
 	/* Open Dynamic Page Menu */
