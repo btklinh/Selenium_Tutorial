@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="commons.MethodListener"/>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="reportConfig.ExtentReportListenerV2"/>
+    <listener class-name="reportConfig.ExtentListener"/>
   </listeners>
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="browser" value="chrome"/>
@@ -18,16 +18,4 @@
       </class> <!-- com.bankguru.user.Level_15_Log_Report_HTML -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
-  <test thread-count="5" name="Run on Firefox(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.bankguru.user.Level_15_Log_Report_HTML">
-        <methods>
-          <include name="TC_02_Login_To_System"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.bankguru.user.Level_15_Log_Report_HTML -->
-    </classes>
-  </test> <!-- Run on Firefox(failed) -->
 </suite> <!-- Failed suite [Bank Guru] -->

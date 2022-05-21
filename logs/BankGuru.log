@@ -276,3 +276,64 @@
 [INFO ] [2022-05-20 02:23:51,648] Login - Step 05: Click to 'Login' button
 [INFO ] [2022-05-20 02:23:52,836] Login - Step 06: Verify welcom message display in 'Homepage'
 [INFO ] [2022-05-20 02:23:52,875] Postcondition - Close browser
+[INFO ] [2022-05-21 15:08:30,986] Pre-condition: Open chrome and Navigate to app url
+[INFO ] [2022-05-21 15:08:43,345] Register - Step 01: Get login page url
+[INFO ] [2022-05-21 15:08:43,351] Register - Step 02: Click to 'here' link
+[INFO ] [2022-05-21 15:08:45,148] Register - Step 03: Input to 'Email' textbox with value: klinhtkt@gmail.com
+[INFO ] [2022-05-21 15:08:45,310] Register - Step 04: Click to 'Submit' button
+[INFO ] [2022-05-21 15:08:47,342] Register - Step 05: Get 'Username' / 'Password' information
+[INFO ] [2022-05-21 15:08:47,452] Login - Step 01: Open Login page
+[INFO ] [2022-05-21 15:08:48,303] Login - Step 03: Input to 'Username' textbox with value: mngr399874
+[INFO ] [2022-05-21 15:08:48,435] Login - Step 04: Input to 'Password' textbox with value: uteguga
+[INFO ] [2022-05-21 15:08:48,553] Login - Step 05: Click to 'Login' button
+[INFO ] [2022-05-21 15:08:49,500] Login - Step 06: Verify welcom message display in 'Homepage'
+[INFO ] [2022-05-21 15:08:49,557] Postcondition - Close browser
+[INFO ] [2022-05-21 15:08:49,811] Pre-condition: Open firefox and Navigate to app url
+[INFO ] [2022-05-21 15:33:37,249] Pre-condition: Open chrome and Navigate to app url
+[INFO ] [2022-05-21 15:33:44,836] Register - Step 01: Get login page url
+[INFO ] [2022-05-21 15:33:44,855] Register - Step 02: Click to 'here' link
+[INFO ] [2022-05-21 15:33:46,359] Register - Step 03: Input to 'Email' textbox with value: klinhtkt@gmail.com
+[INFO ] [2022-05-21 15:33:46,523] Register - Step 04: Click to 'Submit' button
+[INFO ] [2022-05-21 15:33:48,545] Register - Step 05: Get 'Username' / 'Password' information
+[INFO ] [2022-05-21 15:33:48,648] Login - Step 01: Open Login page
+[INFO ] [2022-05-21 15:33:49,521] Login - Step 03: Input to 'Username' textbox with value: mngr399874
+[INFO ] [2022-05-21 15:33:49,646] Login - Step 04: Input to 'Password' textbox with value: uteguga
+[INFO ] [2022-05-21 15:33:49,760] Login - Step 05: Click to 'Login' button
+[INFO ] [2022-05-21 15:33:50,714] Login - Step 06: Verify welcom message display in 'Homepage'
+[INFO ] [2022-05-21 15:33:50,769] Postcondition - Close browser
+[INFO ] [2022-05-21 15:33:51,036] Pre-condition: Open firefox and Navigate to app url
+[INFO ] [2022-05-21 15:34:14,910] Register - Step 01: Get login page url
+[INFO ] [2022-05-21 15:34:14,912] Register - Step 02: Click to 'here' link
+[INFO ] [2022-05-21 15:34:16,623] Register - Step 03: Input to 'Email' textbox with value: klinhtkt@gmail.com
+[INFO ] [2022-05-21 15:34:16,702] Register - Step 04: Click to 'Submit' button
+[INFO ] [2022-05-21 15:34:18,797] Register - Step 05: Get 'Username' / 'Password' information
+[INFO ] [2022-05-21 15:34:18,862] Login - Step 01: Open Login page
+[INFO ] [2022-05-21 15:34:19,964] Login - Step 03: Input to 'Username' textbox with value: mngr399874
+[INFO ] [2022-05-21 15:34:20,023] Login - Step 04: Input to 'Password' textbox with value: uteguga
+[INFO ] [2022-05-21 15:34:20,065] Login - Step 05: Click to 'Login' button
+[INFO ] [2022-05-21 15:34:21,250] Login - Step 06: Verify welcom message display in 'Homepage'
+[INFO ] [2022-05-21 15:34:21,301] Postcondition - Close browser
+[INFO ] [2022-05-21 16:39:51,683] Pre-condition: Open chrome and Navigate to app url
+[INFO ] [2022-05-21 16:40:03,008] Register - Step 01: Get login page url
+[INFO ] [2022-05-21 16:40:03,016] Register - Step 02: Click to 'here' link
+[INFO ] [2022-05-21 16:40:05,378] Register - Step 03: Input to 'Email' textbox with value: klinhtkt@gmail.com
+[INFO ] [2022-05-21 16:40:05,541] Register - Step 04: Click to 'Submit' button
+[INFO ] [2022-05-21 16:40:07,666] Register - Step 05: Get 'Username' / 'Password' information
+[INFO ] [2022-05-21 16:40:07,784] Login - Step 01: Open Login page
+[INFO ] [2022-05-21 16:40:08,688] Login - Step 03: Input to 'Username' textbox with value: mngr399874
+[INFO ] [2022-05-21 16:40:08,831] Login - Step 04: Input to 'Password' textbox with value: uteguga
+[INFO ] [2022-05-21 16:40:08,951] Login - Step 05: Click to 'Login' button
+[INFO ] [2022-05-21 16:40:10,104] Login - Step 06: Verify welcom message display in 'Homepage'
+[INFO ] [2022-05-21 16:40:10,243] Postcondition - Close browser
+[INFO ] [2022-05-21 16:50:38,010] Pre-condition: Open chrome and Navigate to app url
+[INFO ] [2022-05-21 16:50:57,260] Register - Step 01: Get login page url
+[INFO ] [2022-05-21 16:50:57,266] Register - Step 02: Click to 'here' link
+[INFO ] [2022-05-21 16:51:11,270] Register - Step 03: Input to 'Email' textbox with value: klinhtkt@gmail.com
+[INFO ] [2022-05-21 16:51:11,459] Register - Step 04: Click to 'Submit' button
+[INFO ] [2022-05-21 16:51:18,372] Register - Step 05: Get 'Username' / 'Password' information
+[INFO ] [2022-05-21 16:51:18,485] Login - Step 01: Open Login page
+[INFO ] [2022-05-21 16:51:20,560] Login - Step 03: Input to 'Username' textbox with value: mngr399874
+[INFO ] [2022-05-21 16:51:20,743] Login - Step 04: Input to 'Password' textbox with value: uteguga
+[INFO ] [2022-05-21 16:51:20,861] Login - Step 05: Click to 'Login' button
+[INFO ] [2022-05-21 16:51:25,416] Login - Step 06: Verify welcom message display in 'Homepage'
+[INFO ] [2022-05-21 16:51:25,474] Postcondition - Close browser
