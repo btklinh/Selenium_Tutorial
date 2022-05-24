@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Run on Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 21 16:50:37 ICT 2022</td>
+<td>Started on:</td><td>Wed May 25 02:21:01 ICT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>47 seconds (47737 ms)</td>
+<tr><td>Total time:</td><td>129 seconds (129589 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,74 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.bankguru.user.Level_15_Log_Report_HTML.TC_02_Login_To_System()'><b>TC_02_Login_To_System</b><br>Test class: com.bankguru.user.Level_15_Log_Report_HTML<br/>
-<a href="#Output-277601240" onClick='toggleBox("Output-277601240", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-277601240" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-277601240">
-[INFO ] [2022-05-21 16:51:18,485] Login - Step 01: Open Login page
-<br><br/>
-[INFO ] [2022-05-21 16:51:20,560] Login - Step 03: Input to 'Username' textbox with value: mngr399874
-<br><br/>
-[INFO ] [2022-05-21 16:51:20,743] Login - Step 04: Input to 'Password' textbox with value: uteguga
-<br><br/>
-[INFO ] [2022-05-21 16:51:20,861] Login - Step 05: Click to 'Login' button
-<br><br/>
-[INFO ] [2022-05-21 16:51:25,416] Login - Step 06: Verify welcom message display in 'Homepage'
-<br><br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [Welcome To Manager&apos;s Page of Guru99 Bankdfasd ., ] but found [Welcome To Manager&apos;s Page of Guru99 Bank]
-	at commons.AbstractTest.checkEquals(AbstractTest.java:174)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:185)
-	at com.bankguru.user.Level_15_Log_Report_HTML.TC_02_Login_To_System(Level_15_Log_Report_HTML.java:65)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace277601240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace277601240'><pre>java.lang.AssertionError: expected [Welcome To Manager&apos;s Page of Guru99 Bankdfasd ., ] but found [Welcome To Manager&apos;s Page of Guru99 Bank]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:442)
-	at commons.AbstractTest.checkEquals(AbstractTest.java:174)
-	at commons.AbstractTest.verifyEquals(AbstractTest.java:185)
-	at com.bankguru.user.Level_15_Log_Report_HTML.TC_02_Login_To_System(Level_15_Log_Report_HTML.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>6</td>
-<td>com.bankguru.user.Level_15_Log_Report_HTML@f1da57d</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -143,26 +75,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bankguru.user.Level_15_Log_Report_HTML.TC_01_Register_To_System()'><b>TC_01_Register_To_System</b><br>Test class: com.bankguru.user.Level_15_Log_Report_HTML<br/>
-<a href="#Output-1941598182" onClick='toggleBox("Output-1941598182", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1941598182" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1941598182">
-[INFO ] [2022-05-21 16:50:57,260] Register - Step 01: Get login page url
-<br><br/>
-[INFO ] [2022-05-21 16:50:57,266] Register - Step 02: Click to 'here' link
-<br><br/>
-[INFO ] [2022-05-21 16:51:11,270] Register - Step 03: Input to 'Email' textbox with value: klinhtkt@gmail.com
-<br><br/>
-[INFO ] [2022-05-21 16:51:11,459] Register - Step 04: Click to 'Submit' button
-<br><br/>
-[INFO ] [2022-05-21 16:51:18,372] Register - Step 05: Get 'Username' / 'Password' information
-<br><br/>
-</div>
-</td>
+<td title='com.bankguru.user.Level_16_Share_Class_State_01.TC_01_Create_New_Account()'><b>TC_01_Create_New_Account</b><br>Test class: com.bankguru.user.Level_16_Share_Class_State_01</td>
 <td></td>
-<td>21</td>
-<td>com.bankguru.user.Level_15_Log_Report_HTML@f1da57d</td></tr>
+<td>0</td>
+<td>com.bankguru.user.Level_16_Share_Class_State_01@2dfaea86</td></tr>
+<tr>
+<td title='com.bankguru.user.Level_16_Share_Class_State_02.TC_01_Create_New_Customer()'><b>TC_01_Create_New_Customer</b><br>Test class: com.bankguru.user.Level_16_Share_Class_State_02</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.user.Level_16_Share_Class_State_02@15888343</td></tr>
+<tr>
+<td title='com.bankguru.user.Level_16_Share_Class_State_01.TC_02_View_Account()'><b>TC_02_View_Account</b><br>Test class: com.bankguru.user.Level_16_Share_Class_State_01</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.user.Level_16_Share_Class_State_01@2dfaea86</td></tr>
+<tr>
+<td title='com.bankguru.user.Level_16_Share_Class_State_02.TC_02_View_Customer()'><b>TC_02_View_Customer</b><br>Test class: com.bankguru.user.Level_16_Share_Class_State_02</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.user.Level_16_Share_Class_State_02@15888343</td></tr>
+<tr>
+<td title='com.bankguru.user.Level_16_Share_Class_State_01.TC_03_Edit_Account()'><b>TC_03_Edit_Account</b><br>Test class: com.bankguru.user.Level_16_Share_Class_State_01</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.user.Level_16_Share_Class_State_01@2dfaea86</td></tr>
+<tr>
+<td title='com.bankguru.user.Level_16_Share_Class_State_02.TC_03_Edit_Customer()'><b>TC_03_Edit_Customer</b><br>Test class: com.bankguru.user.Level_16_Share_Class_State_02</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.user.Level_16_Share_Class_State_02@15888343</td></tr>
+<tr>
+<td title='com.bankguru.user.Level_16_Share_Class_State_01.TC_04_Delete_Account()'><b>TC_04_Delete_Account</b><br>Test class: com.bankguru.user.Level_16_Share_Class_State_01</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.user.Level_16_Share_Class_State_01@2dfaea86</td></tr>
+<tr>
+<td title='com.bankguru.user.Level_16_Share_Class_State_02.TC_04_Delete_Customer()'><b>TC_04_Delete_Customer</b><br>Test class: com.bankguru.user.Level_16_Share_Class_State_02</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.user.Level_16_Share_Class_State_02@15888343</td></tr>
 </table><p>
 </body>
 </html>
