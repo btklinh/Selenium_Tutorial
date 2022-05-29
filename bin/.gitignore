@@ -1,2 +1,6 @@
-/reportConfig/
+/browserFactory/
 /com/
+/commons/
+/pageObjects/
+/pageUI/
+/reportConfig/
